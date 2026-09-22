@@ -13,7 +13,7 @@
 <div class="bg-white rounded-2xl border border-slate-200 p-6">
 
     <div class="flex items-center gap-3 mb-5">
-        <span class="w-11 h-11 flex items-center justify-center rounded-xl bg-emerald-500 text-white text-xl">⚙️</span>
+        <span class="w-11 h-11 flex items-center justify-center rounded-xl bg-emerald-500 text-white text-xl"><img src="{{ asset('icons/check_bill.png') }}" class="w-7 h-7 object-contain"></span>
         <div>
             <p class="text-xs font-bold text-emerald-600 tracking-wide">{{ __('ORDER SETTLED') }}</p>
             <p class="text-xl font-bold text-slate-800">{{ __('Payment Successful') }}</p>
@@ -56,7 +56,7 @@
         class="w-full flex items-center justify-between gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-3.5 rounded-xl transition mb-3"
     >
         <span class="flex items-center gap-2">
-            <span class="leading-none">🖨️</span> Print Thermal Receipt
+            <span class="leading-none"><img src="{{ asset('icons/print_kasir.png') }}" class="w-3 h-3 object-contain"></span> Print Thermal Receipt
         </span>
         <span class="text-xs font-mono bg-white/20 px-2 py-1 rounded-md">[ENTER] / [Ctrl+P]</span>
     </button>
@@ -64,11 +64,11 @@
     <div class="grid grid-cols-2 gap-3">
         <a href="{{ route('kasir.transaction.index') }}"
            class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 rounded-xl transition">
-            <span class="leading-none">🧾</span> New Sale [Space]
+            <span class="leading-none"><img src="{{ asset('icons/new_sale.png') }}" class="w-3 h-3 object-contain"></span> New Sale [Space]
         </a>
         <a href="{{ route('kasir.history.index') }}"
            class="flex items-center justify-center gap-2 border border-slate-200 text-slate-600 hover:bg-slate-50 font-semibold py-2.5 rounded-xl transition">
-            <span class="leading-none">📄</span> View All Logs
+            <span class="leading-none"><img src="{{ asset('icons/transaksi_kasir.png') }}" class="w-3 h-3 object-contain"></span> View All Logs
         </a>
     </div>
 

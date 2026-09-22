@@ -209,5 +209,11 @@
     "GROSS": "GROSS",
     "STOCK TURNOVER": "STOCK TURNOVER",
     "Tidak ada data produk.": "No product data available.",
-    "Belum ada transaksi.": "There are no transactions yet."
+    "Belum ada transaksi.": "There are no transactions yet.",
+    "Intraday trend from 08:00 to 20:00 across all active POS terminals": "Intraday trend from 08:00 to 20:00 across all active POS terminals",
+    "View All Fruit Rankings": "View All Fruit Rankings",
+    "shift logs": "shift logs",
+    "Manage Stock": "Manage Stock",
+    "fresh categories": "fresh categories",
+    "plentiful in stock": "plentiful in stock"
 }

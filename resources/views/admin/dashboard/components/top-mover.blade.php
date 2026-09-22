@@ -14,7 +14,7 @@
     <div class="flex items-center justify-between mb-1">
         <h2 class="font-semibold text-slate-800 text-lg">{{ __('Top Movers') }}</h2>
         <button type="button" class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-50" title="{{ __('Refresh') }}">
-            <span class="leading-none">🔄</span>
+            <span class="leading-none"><img src="{{ asset('icons/terlaris_admin.png') }}" class="w-4 h-4 object-contain"></span>
         </button>
     </div>
     <p class="text-sm text-slate-400 mb-4">{{ __('Ranked by turnover weight') }}</p>
@@ -41,7 +41,7 @@
     </div>
 
     <a href="{{ route('admin.fruits.index') }}" class="mt-5 block text-center text-sm font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 rounded-xl py-2.5 transition">
-        View All Fruit Rankings →
+        {{ __('View All Fruit Rankings') }}
     </a>
 
 </div>

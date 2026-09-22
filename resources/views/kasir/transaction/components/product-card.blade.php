@@ -3,7 +3,15 @@
     $product diharapkan berbentuk array/objek dengan: code, stock_label, image,
     category, name, price, unit, in_stock (bool)
 --}}
-<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden {{ !($product['in_stock'] ?? true) ? 'opacity-60' : '' }}">
+<div
+    data-product-card
+    data-product-id="{{ $product['id'] }}"
+    data-product-name="{{ $product['name'] }}"
+    data-product-price="{{ $product['price'] }}"
+    data-product-unit="{{ $product['unit'] }}"
+    data-product-stock="{{ $product['stock'] }}"
+    class="bg-white rounded-2xl border border-slate-200 overflow-hidden {{ !($product['in_stock'] ?? true) ? 'opacity-60' : '' }} {{ ($product['in_stock'] ?? true) ? 'cursor-pointer hover:-translate-y-0.5 hover:shadow-md transition' : '' }}"
+>
 
     <div class="relative h-32">
         <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="w-full h-full object-cover">
@@ -40,7 +48,7 @@
                 @if(!($product['in_stock'] ?? true)) disabled @endif
                 data-add-to-cart="{{ $product['id'] ?? '' }}"
             >
-                <span aria-hidden="true">🛒</span>
+                <span aria-hidden="true"><img src="{{ asset('icons/keranjang_kasir.png') }}" class="w-4 h-4 object-contain"></span>
             </button>
         </div>
     </div>

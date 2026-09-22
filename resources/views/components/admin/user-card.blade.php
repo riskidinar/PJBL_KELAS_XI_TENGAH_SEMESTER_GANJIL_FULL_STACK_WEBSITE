@@ -1,7 +1,7 @@
 
 <div class="flex items-center gap-2 px-1 py-1">
     <img
-        src="{{ auth()->user()->avatar_url ?? asset('images/default-avatar.png') }}"
+        src="{{ auth()->user()->avatar_url ?? asset('img/logo.png') }}"
         alt="{{ auth()->user()->name ?? 'Admin' }}"
         class="w-9 h-9 rounded-full object-cover shrink-0"
     >

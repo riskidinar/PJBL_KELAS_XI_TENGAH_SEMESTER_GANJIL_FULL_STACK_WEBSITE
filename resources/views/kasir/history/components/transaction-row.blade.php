@@ -69,7 +69,7 @@
     {{-- Tender Method --}}
     <td class="py-4 pr-4 whitespace-nowrap">
         <p class="text-sm font-semibold text-slate-700 flex items-center gap-1.5">
-            <span class="leading-none">💳</span> {{ $trx['tender_method'] }}
+            <span class="leading-none"><img src="{{ asset('icons/cash_admin.png') }}" class="w-3 h-3 object-contain"></span></span> {{ $trx['tender_method'] }}
         </p>
         @foreach ($trx['tender_lines'] ?? [] as $line)
             <p class="text-xs text-slate-400">{{ $line }}</p>
@@ -87,7 +87,7 @@
     {{-- Audit Status --}}
     <td class="py-4 pr-4 whitespace-nowrap">
         <span class="inline-flex items-center gap-1 text-xs font-semibold bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-full">
-            <span class="leading-none">✅</span> {{ $trx['status'] ?? 'Settled' }}
+            <span class="leading-none"><img src="{{ asset('icons/check.png') }}" class="w-3 h-3 object-contain"></span></span> {{ $trx['status'] ?? 'Settled' }}
         </span>
     </td>
 
@@ -95,10 +95,10 @@
     <td class="py-4 pr-5 whitespace-nowrap">
         <div class="flex items-center gap-2">
             <button type="button" class="w-8 h-8 flex items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100" title="Print Receipt">
-                🖨️
+                <img src="{{ asset('icons/print.png') }}" class="w-4 h-4 object-contain">
             </button>
             <button type="button" class="w-8 h-8 flex items-center justify-center rounded-lg {{ $trx['highlight'] ?? false ? 'bg-emerald-600 text-white' : 'text-slate-500 hover:bg-slate-100' }}" title="View Detail">
-                👁️
+                 <img src="{{ asset('icons/see_detail.png') }}" class="w-4 h-4 object-contain">
             </button>
         </div>
     </td>

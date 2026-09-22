@@ -12,7 +12,7 @@
     <div class="flex items-center justify-between mb-1">
         <h2 class="font-semibold text-slate-800 text-lg">{{ __('Cashier Performance & Terminals') }}</h2>
         <a href="{{ route('admin.kasir.index') }}" class="text-sm font-medium text-emerald-700 hover:text-emerald-800">
-            Shift Logs →
+            {{ __('Shift Logs') }}
         </a>
     </div>
     <p class="text-sm text-slate-400 mb-4">{{ __('Live metrics per register workstation') }}</p>

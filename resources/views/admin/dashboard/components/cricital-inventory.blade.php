@@ -16,7 +16,7 @@
             <span class="text-[11px] font-bold bg-red-500 text-white px-2 py-0.5 rounded-md">{{ count($alerts) }} Items</span>
         </div>
         <a href="{{ route('admin.fruits.index') }}" class="text-sm font-medium text-slate-500 hover:text-slate-700 flex items-center gap-1">
-            Manage Stock <span class="leading-none text-xs">↗️</span>
+           {{ __('Manage Stock') }}
         </a>
     </div>
     <p class="text-sm text-slate-400 mb-4">{{ __('Replenishment priority for shelf balance') }}</p>

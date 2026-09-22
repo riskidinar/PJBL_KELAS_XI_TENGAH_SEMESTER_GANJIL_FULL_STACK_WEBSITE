@@ -62,7 +62,7 @@
     {{-- Journal header bar --}}
     <div class="flex items-center justify-between px-5 py-3 bg-slate-50 border-b border-slate-200">
         <div class="flex items-center gap-2">
-            <span class="leading-none text-slate-500">🕓</span>
+            <span class="leading-none text-slate-500">  <img src="{{ asset('icons/jam_topbar_kasir.png') }}"  class="w-4 h-4 object-contain"></span>
             <span class="text-sm font-semibold text-slate-700">Immutable POS Journal</span>
             <span class="text-xs text-slate-400 bg-white border border-slate-200 rounded-md px-2 py-1 ml-2">
                 Session {{ $sessionId }}

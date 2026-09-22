@@ -66,13 +66,13 @@
     <td class="py-4 pr-5 whitespace-nowrap">
         <div class="flex items-center gap-2">
             <a href="{{ route('admin.fruits.edit', $fruit['id']) }}" class="w-8 h-8 flex items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100" title="Edit">
-                ✏️
+                <img src="{{ asset('icons/edit_buah.png') }}" class="w-4 h-4 object-contain">
             </a>
             <form method="POST" action="{{ route('admin.fruits.destroy', $fruit['id']) }}" onsubmit="return confirm('Hapus produk ini?')">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="w-8 h-8 flex items-center justify-center rounded-lg text-red-400 hover:bg-red-50" title="Hapus">
-                    🗑️
+                    <img src="{{ asset('icons/delete.png') }}" class="w-4 h-4 object-contain">
                 </button>
             </form>
         </div>

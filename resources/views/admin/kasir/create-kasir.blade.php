@@ -20,7 +20,7 @@
             <div class="flex items-start justify-between px-6 py-5 border-b border-slate-100">
                 <div class="flex items-center gap-3">
                     <span class="w-11 h-11 shrink-0 flex items-center justify-center rounded-xl bg-emerald-600 text-white text-lg">
-                        👤➕
+                        <img src="{{ asset('icons/add_kasir_form.png') }}" class="w-5 h-5 object-contain">
                     </span>
                     <div>
                         <h1 class="text-lg font-bold text-slate-800">{{ __('Add New Cashier') }}</h1>
@@ -85,7 +85,7 @@
                             class="w-full pl-11 pr-11 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-500"
                         >
                         <button type="button" id="toggle-password-btn" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600" title="{{ __('Show password') }}">
-                            👁️
+                            <img src="{{ asset('icons/.png') }}" class="w-5 h-5 object-contain">
                         </button>
                     </div>
                     <p class="text-xs text-slate-400 mt-1.5">
@@ -152,7 +152,7 @@
                         type="submit"
                         class="flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition"
                     >
-                        <span class="leading-none">👤✓</span> {{ __('Create Cashier Account') }}
+                        <span class="leading-none"><img src="{{ asset('icons/fix_kasir_form.png') }}" class="w-5 h-5 object-contain"></span> {{ __('Create Cashier Account') }}
                     </button>
                 </div>
 

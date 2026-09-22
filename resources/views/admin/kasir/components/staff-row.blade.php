@@ -38,7 +38,7 @@
             <div>
                 <p class="font-semibold text-slate-800 leading-tight">{{ $staff['name'] }}</p>
                 <p class="text-xs text-slate-400">{{ $staff['code'] }}</p>
-                <p class="text-xs text-slate-400">• {{ $staff['email'] }}</p>
+                <p class="text-xs text-slate-400">•{{ $staff['email'] }}</p>
             </div>
         </div>
     </td>
@@ -98,13 +98,13 @@
     <td class="py-4 pr-5 whitespace-nowrap">
         <div class="flex items-center gap-2">
             <a href="{{ route('admin.kasir.edit', $staff['id'] ?? 0) }}" class="w-8 h-8 flex items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100" title="Edit">
-                📝
+                <img src="{{ asset('icons/edit_kasir.png') }}" class="w-4 h-4 object-contain">
             </a>
             <form method="POST" action="{{ route('admin.kasir.destroy', $staff['id'] ?? 0) }}" onsubmit="return confirm('Hapus staf kasir ini?')">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="w-8 h-8 flex items-center justify-center rounded-lg text-red-400 hover:bg-red-50" title="Hapus">
-                    🗑️
+                    <img src="{{ asset('icons/delete.png') }}" class="w-4 h-4 object-contain">
                 </button>
             </form>
         </div>

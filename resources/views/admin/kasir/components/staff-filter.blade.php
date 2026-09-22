@@ -11,7 +11,7 @@
 <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
 
     <div class="relative w-full lg:max-w-xs">
-        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 leading-none">🔍</span>
+        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 leading-none"><img src="{{ asset('icons/search.png') }}" class="w- h-5 object-contain"></span>
         <input
             type="text"
             id="staff-search"

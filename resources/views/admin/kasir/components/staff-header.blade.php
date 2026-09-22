@@ -9,7 +9,7 @@
 
     <a href="{{ route('admin.kasir.create') }}"
        class="shrink-0 flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-5 py-3 rounded-xl transition whitespace-nowrap">
-        <span class="leading-none">👤➕</span> {{ __('Add New Cashier') }}
+        <span class="leading-none"><img src="{{ asset('icons/add_kasir_form.png') }}" class="w-5 h-5 object-contain"></span> {{ __('Add New Cashier') }}
     </a>
 
 </div>

@@ -209,6 +209,12 @@
     "GROSS": "KOTOR",
     "STOCK TURNOVER": "PERPUTARAN STOK",
     "Tidak ada data produk.": "Tidak ada data produk.",
-    "Belum ada transaksi.": "Belum ada transaksi."
-
+    "Belum ada transaksi.": "Belum ada transaksi.",
+    "Intraday trend from 08:00 to 20:00 across all active POS terminals": "Tren intraday dari pukul 08.00 hingga 20.00 di seluruh terminal POS yang aktif.",
+    "View All Fruit Rankings": "Lihat Semua Peringkat Buah",
+    "shift logs": "catatan giliran kerja",
+    "Manage Stock": "Kelola Stock",
+    "fresh categories": "Kategori Baru",
+    "plentiful in stock": "tersedia dalam jumlah banyak"
+    
 }

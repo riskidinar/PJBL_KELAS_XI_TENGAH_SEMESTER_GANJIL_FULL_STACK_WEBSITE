@@ -1,5 +1,5 @@
 @php
-    $range = $range ?? 'today'; // today | week | month | custom
+    $range = $range ?? 'today';
 @endphp
 
 <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-6">

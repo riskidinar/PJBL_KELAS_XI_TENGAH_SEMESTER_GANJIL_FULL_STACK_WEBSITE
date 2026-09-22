@@ -13,7 +13,7 @@
     </div>
 
     <button type="button" class="shrink-0 flex items-center gap-2 text-sm font-medium border border-slate-200 px-4 py-2.5 rounded-xl hover:bg-slate-50">
-        <span class="leading-none">⬆️</span> Import CSV
+        <span class="leading-none"><img src="{{ asset('icons/export.png') }}" class="w-3 h-3 object-contain"></span> Export CSV
     </button>
 
 </div>

@@ -15,7 +15,7 @@
     <div class="bg-white rounded-2xl border border-slate-200 p-4">
         <div class="flex items-center justify-between mb-3">
             <p class="text-xs font-semibold text-slate-400 leading-tight">{{ __('TOTAL FRUIT') }}<br>{{ __('VARIETIES') }}</p>
-            <span class="w-7 h-7 flex items-center justify-center bg-slate-100 rounded-lg">🗂️</span>
+            <span class="w-7 h-7 flex items-center justify-center bg-slate-100 rounded-lg"><img src="{{ asset('icons/i1_buah.png') }}" class="w-4 h-4 object-contain"></span>
         </div>
         <p class="text-2xl font-bold text-slate-800">{{ $stats['total_varieties'] }}</p>
     </div>
@@ -23,7 +23,7 @@
     <div class="bg-white rounded-2xl border border-slate-200 p-4">
         <div class="flex items-center justify-between mb-3">
             <p class="text-xs font-semibold text-slate-400 leading-tight">{{ __('IN STOCK (SAFE)') }}</p>
-            <span class="w-7 h-7 flex items-center justify-center bg-emerald-100 rounded-lg">✅</span>
+            <span class="w-7 h-7 flex items-center justify-center bg-emerald-100 rounded-lg"><img src="{{ asset('icons/i2_buah.png') }}" class="w-4 h-4 object-contain"></span>
         </div>
         <p class="text-2xl font-bold text-emerald-600">{{ $stats['in_stock'] }}</p>
         <div class="flex items-center gap-2 mt-1">
@@ -34,7 +34,7 @@
     <div class="bg-white rounded-2xl border border-slate-200 p-4">
         <div class="flex items-center justify-between mb-3">
             <p class="text-xs font-semibold text-slate-400 leading-tight">{{ __('LOW STOCK ALERT') }}</p>
-            <span class="w-7 h-7 flex items-center justify-center bg-orange-100 rounded-lg">⚠️</span>
+            <span class="w-7 h-7 flex items-center justify-center bg-orange-100 rounded-lg"><img src="{{ asset('icons/i3_buah.png') }}" class="w-4 h-4 object-contain"></span>
         </div>
         <p class="text-2xl font-bold text-orange-500">{{ $stats['low_stock'] }}</p>
         <div class="flex items-center gap-2 mt-1">
@@ -46,7 +46,7 @@
     <div class="bg-white rounded-2xl border border-slate-200 p-4">
         <div class="flex items-center justify-between mb-3">
             <p class="text-xs font-semibold text-slate-400 leading-tight">{{ __('OUT OF STOCK') }}</p>
-            <span class="w-7 h-7 flex items-center justify-center bg-red-100 rounded-lg">🚫</span>
+            <span class="w-7 h-7 flex items-center justify-center bg-red-100 rounded-lg"><img src="{{ asset('icons/i4_buah.png') }}" class="w-4 h-4 object-contain"></span>
         </div>
         <p class="text-2xl font-bold text-red-600">{{ $stats['out_of_stock'] }} <span class="text-sm font-medium text-slate-400">{{ __('Fruits') }}</span></p>
         <span class="inline-block text-xs font-semibold bg-red-500 text-white px-2 py-0.5 rounded-md mt-1">{{ __('Unavailable') }}</span>
@@ -55,7 +55,7 @@
     <div class="bg-white rounded-2xl border border-slate-200 p-4">
         <div class="flex items-center justify-between mb-3">
             <p class="text-xs font-semibold text-slate-400 leading-tight">{{ __('INVENTORY') }}<br>{{ __('VALUATION') }}</p>
-            <span class="w-7 h-7 flex items-center justify-center bg-sky-100 rounded-lg">📗</span>
+            <span class="w-7 h-7 flex items-center justify-center bg-sky-100 rounded-lg"><img src="{{ asset('icons/cash_admin.png') }}" class="w-4 h-4 object-contain"></span>
         </div>
         <p class="text-xl font-bold text-slate-800">Rp {{ number_format($stats['valuation'] / 1_000_000, 2) }}M</p>
     </div>

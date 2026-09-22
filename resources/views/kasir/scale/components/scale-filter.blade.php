@@ -14,7 +14,7 @@
 
     {{-- Kotak pencarian --}}
     <div class="relative">
-        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 leading-none">🔍</span>
+        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 leading-none"><img src="{{ asset('icons/search.png') }}" class="w-5 h-5 object-contain"></span>
         <input
             type="text"
             id="scale-search"
@@ -41,7 +41,7 @@
         <span class="text-slate-200">|</span>
 
         <button type="button" class="flex items-center gap-1.5 text-sm font-medium text-emerald-700 hover:text-emerald-800">
-            <span class="leading-none">🔄</span> Refresh Log
+            <span class="leading-none"><img src="{{ asset('icons/refresh.png') }}" class="w-3 h-3 object-contain"></span> Refresh Log
         </button>
 
         <span class="text-slate-200">|</span>

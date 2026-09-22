@@ -1,6 +1,6 @@
 <div class="flex items-center gap-3">
     <div class="relative flex-1">
-        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-sm text-slate-400" aria-hidden="true">🔍</span>
+        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-sm text-slate-400" aria-hidden="true"><img src="{{ asset('icons/search.png') }}" class="w-5 h-5 object-contain"></span>
         <input
             type="text"
             id="fruit-search"

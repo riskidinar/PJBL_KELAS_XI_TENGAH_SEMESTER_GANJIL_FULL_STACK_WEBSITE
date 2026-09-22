@@ -17,7 +17,7 @@
 
         <h1 class="text-3xl font-bold text-slate-800">{{ __('Product Overview & Analytics') }}</h1>
         <p class="text-slate-400 mt-1 max-w-md">
-            Real-time sales performance, inventory alerts, and cashier tracking
+            {{ __('Real-time sales performance, inventory alerts, and cashier tracking') }}
         </p>
     </div>
 

@@ -21,7 +21,7 @@
                 data-qty-increase="{{ $item['id'] }}">+</button>
 
         <button type="button" class="ml-auto text-red-500 hover:text-red-600" data-remove-item="{{ $item['id'] }}">
-            <span aria-hidden="true">🗑️</span>
+            <span aria-hidden="true"><img src="{{ asset('icons/delete_transaction.png') }}" class="w-4 h-4 object-contain"></span>
         </button>
     </div>
 </div>

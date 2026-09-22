@@ -19,11 +19,11 @@
 
     <div class="flex flex-wrap items-center gap-3">
         <button type="button" class="flex items-center gap-2 text-sm font-medium border border-slate-200 px-4 py-2.5 rounded-xl hover:bg-slate-50">
-            <span class="leading-none">⬆️</span> {{ __('Import CSV') }}
+            <span class="leading-none"><img src="{{ asset('icons/export.png') }}" class="w-4 h-4 object-contain"></span> {{ __('Export CSV') }}
         </button>
         <a href="{{ route('admin.fruits.create') }}"
            class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition whitespace-nowrap">
-            <span class="leading-none">⊕</span> {{ __('Add New Fruit') }}
+            <span class="leading-none">+</span> {{ __('Add New Fruit') }}
         </a>
     </div>
 

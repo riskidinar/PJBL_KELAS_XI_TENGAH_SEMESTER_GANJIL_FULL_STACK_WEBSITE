@@ -18,7 +18,7 @@
     {{-- Baris 1: search + dropdown + tombol filter --}}
     <div class="flex flex-col lg:flex-row gap-3">
         <div class="relative flex-1">
-            <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 leading-none">🔍</span>
+            <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 leading-none"><img src="{{ asset('icons/search.png') }}" class="w-5 h-5 object-contain"></span>
             <input
                 type="text"
                 id="fruit-search"
@@ -49,7 +49,7 @@
         </label>
 
         <button type="button" class="w-11 h-11 shrink-0 flex items-center justify-center rounded-xl border border-slate-200 text-slate-400 hover:bg-slate-50" title="Filter lanjutan">
-            🎛️
+            <img src="{{ asset('icons/filter_buah.png') }}" class="w-4 h-4 object-contain">
         </button>
     </div>
 
